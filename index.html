@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRG-WMC — Lernplattform</title>
-    <script>(function(){var s=location.pathname.split("/");s.pop();(function t(){if(!s.length)return;var r=s.join("/")+"/",e=document.createElement("script");e.src=r+"assets/loader.js";e.setAttribute("data-css","lesson.css");e.setAttribute("data-js","theme.js");e.onerror=function(){s.pop();t()};e.onload=function(){if(!window.__SITE_ROOT__){s.pop();t()}};document.head.appendChild(e)})()})();</script>
+    <title>Über mich</title>
 </head>
+
 <body>
-<main>
-    <header class="lektion">
-        <div>
-            <div class="baustein">GRG-WMC · Webprogrammierung und Mobile Computing</div>
-            <h1>Lernplattform</h1>
-            <p class="meta">Die vorbereiteten Lektionen aus <code>unterricht/</code> — HTL Spengergasse, Erwachsenenbildung (Abendform)</p>
-        </div>
-        <button class="theme-toggle no-print" type="button" id="theme-toggle">Dunkel</button>
+
+    <header>
+        <h1>Über mich</h1>
     </header>
 
-    <div class="box">
-        <p>Das ist die <strong>Lernplattform</strong>: die vorbereiteten Lektionen aus
-        <code>unterricht/</code>. Klicke eine Lektion an — jede führt am Ende zur nächsten.
-        Mit dem Button oben rechts schaltest du zwischen <strong>Hell</strong> und
-        <strong>Dunkel</strong>. Lokal über <code>./serve.sh</code> (nie <code>file://</code>).</p>
-    </div>
+    <nav>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#hobbys">Hobbys</a>
+    </nav>
 
-    <h2>KM3 — Webseiten: Auszeichnung, Formatierung, Skript-Einstieg (Jahr 1)</h2>
-    <table>
-        <tr><th>#</th><th>Lektion</th><th>Worum geht's</th></tr>
-        <tr><td>01</td>
-            <td><a href="unterricht/KM3-01-tooling-git/lesson.html">Werkzeuge &amp; Git</a></td>
-            <td>Vom leeren Ordner ins Repository: Tooling, Terminal, Git-Workflow</td></tr>
-        <tr><td>02</td>
-            <td><a href="unterricht/KM3-02-html-basics/lesson.html">HTML-Grundlagen</a></td>
-            <td>Struktur statt Deko: die „Über mich“-Seite</td></tr>
-        <tr><td>03</td>
-            <td><a href="unterricht/KM3-03-css-basics/lesson.html">CSS-Grundlagen</a></td>
-            <td>Drei Wege zur Formatierung — und das Box-Model</td></tr>
-    </table>
+    <main>
+        <article id="ueber-mich">
+            <h2>Über mich</h2>
 
-    <p class="meta">Repository:
-        <a href="https://github.com/georgernstgraf/GRG-WMC">github.com/georgernstgraf/GRG-WMC</a></p>
-</main>
+            <p>
+                Hallo, ich interessiere mich für Computer und IT.
+                Ich lerne Webprogrammierung und verschiedene Bereiche der Informatik.
+                Besonders interessant finde ich HTML und Softwareentwicklung.
+            </p>
+
+            <h3>Meine Interessen</h3>
+
+            <ul>
+                <li>Programmieren</li>
+                <li>Computer und Technik</li>
+                <li>Webentwicklung</li>
+            </ul>
+
+            <img src="https://picsum.photos/400/250"
+                 alt="Beispielbild auf meiner Über-mich-Seite">
+        </article>
+
+        <aside id="hobbys">
+            <h2>Mein Hobby</h2>
+            <p>In meiner Freizeit beschäftige ich mich gerne mit Computerspielen.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 Über mich</p>
+    </footer>
+
 </body>
 </html>
