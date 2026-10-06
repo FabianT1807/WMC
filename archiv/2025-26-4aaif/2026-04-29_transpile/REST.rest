@@ -1,5 +1,0 @@
-GET http://localhost:8000/script.ts
-###
-GET http://localhost:8000/essen
-###
-GET http://localhost:8000/hallo
